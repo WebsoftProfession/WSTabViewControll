@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WSTabView.h"
 
-@interface ViewController : UIViewController
-
-
+@interface ViewController : UIViewController<WSTabViewDelegate>
+{
+    __weak IBOutlet WSTabView *wsTabView;
+    __weak IBOutlet UILabel *lblResult;
+}
 @end
 

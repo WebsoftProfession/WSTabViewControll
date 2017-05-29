@@ -15,6 +15,8 @@
 		604E97451E52D55800B4E448 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 604E97431E52D55800B4E448 /* LaunchScreen.storyboard */; };
 		604E97501E52D55900B4E448 /* WSTabViewControllTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 604E974F1E52D55900B4E448 /* WSTabViewControllTests.m */; };
 		604E975B1E52D55900B4E448 /* WSTabViewControllUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 604E975A1E52D55900B4E448 /* WSTabViewControllUITests.m */; };
+		604E976A1E52D60E00B4E448 /* WSTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 604E97691E52D60E00B4E448 /* WSTabView.m */; };
+		604E97701E52D68300B4E448 /* WSTabButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 604E976F1E52D68300B4E448 /* WSTabButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		604E97561E52D55900B4E448 /* WSTabViewControllUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WSTabViewControllUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		604E975A1E52D55900B4E448 /* WSTabViewControllUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSTabViewControllUITests.m; sourceTree = "<group>"; };
 		604E975C1E52D55900B4E448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		604E97681E52D60E00B4E448 /* WSTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSTabView.h; sourceTree = "<group>"; };
+		604E97691E52D60E00B4E448 /* WSTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSTabView.m; sourceTree = "<group>"; };
+		604E976E1E52D68300B4E448 /* WSTabButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSTabButton.h; sourceTree = "<group>"; };
+		604E976F1E52D68300B4E448 /* WSTabButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSTabButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,10 @@
 				604E97431E52D55800B4E448 /* LaunchScreen.storyboard */,
 				604E97461E52D55900B4E448 /* Info.plist */,
 				604E97351E52D55800B4E448 /* Supporting Files */,
+				604E97681E52D60E00B4E448 /* WSTabView.h */,
+				604E97691E52D60E00B4E448 /* WSTabView.m */,
+				604E976E1E52D68300B4E448 /* WSTabButton.h */,
+				604E976F1E52D68300B4E448 /* WSTabButton.m */,
 			);
 			path = WSTabViewControll;
 			sourceTree = "<group>";
@@ -273,8 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				604E97701E52D68300B4E448 /* WSTabButton.m in Sources */,
 				604E973D1E52D55800B4E448 /* ViewController.m in Sources */,
 				604E973A1E52D55800B4E448 /* AppDelegate.m in Sources */,
+				604E976A1E52D60E00B4E448 /* WSTabView.m in Sources */,
 				604E97371E52D55800B4E448 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

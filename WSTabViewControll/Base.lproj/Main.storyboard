@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,55 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iIL-fw-ZWV" customClass="WSTabView">
+                                <rect key="frame" x="0.0" y="24" width="375" height="40"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ztf-GH-1av"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kN5-rO-DHr">
+                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Start" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmE-S3-oM4">
+                                        <rect key="frame" x="60" y="287" width="256" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="256" id="4yF-4H-nJu"/>
+                                            <constraint firstAttribute="height" constant="21" id="CY8-dm-0rb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="rmE-S3-oM4" firstAttribute="top" secondItem="kN5-rO-DHr" secondAttribute="top" constant="287" id="JkL-9C-lfu"/>
+                                    <constraint firstItem="rmE-S3-oM4" firstAttribute="centerX" secondItem="kN5-rO-DHr" secondAttribute="centerX" id="nG6-r9-TGW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iIL-fw-ZWV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="4" id="2PI-7O-eR1"/>
+                            <constraint firstAttribute="trailing" secondItem="kN5-rO-DHr" secondAttribute="trailing" id="4K6-h1-fsm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kN5-rO-DHr" secondAttribute="bottom" id="5C9-Tv-9GB"/>
+                            <constraint firstItem="iIL-fw-ZWV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7vc-kI-lbS"/>
+                            <constraint firstItem="iIL-fw-ZWV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EhO-Cr-Z4G"/>
+                            <constraint firstItem="kN5-rO-DHr" firstAttribute="top" secondItem="iIL-fw-ZWV" secondAttribute="bottom" constant="8" id="FAE-p1-axG"/>
+                            <constraint firstAttribute="trailing" secondItem="iIL-fw-ZWV" secondAttribute="trailing" id="G9Y-Bv-lWk"/>
+                            <constraint firstItem="kN5-rO-DHr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="e2S-pO-VUD"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblResult" destination="rmE-S3-oM4" id="7ps-Lp-10b"/>
+                        <outlet property="wsTabView" destination="iIL-fw-ZWV" id="XTx-jN-xMW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
         </scene>
     </scenes>
 </document>
